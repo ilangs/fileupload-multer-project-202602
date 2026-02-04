@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>index</title>
+    </head>
+    <body>
+        <h1>사진 업로드 폼</h1>
+        <br>
+        <form action="/shop/input" method="post" enctype="multipart/form-data">
+            <table>
+                <tr>
+                    <td>작성자</td>
+                    <td><input type="text" name="writer" value="hong"/></td>
+                </tr>
+                <tr>
+                    <td>설명</td>
+                    <td><input type="text" name="comment" value="길동이가 올린 파일"/></td>
+                </tr>
+                <tr>
+                    <td><label for="photo">파일</label></td>
+                    <td><input type="file" name="photo" id="photo" multiple></td>
+                </tr>
+            </table>
+            <input type="submit" value="업로드" name="전송">
+        </form>
+    </body>
+</html>
